@@ -12,6 +12,10 @@ Currently no binary releases are distributed. You can build from source using th
 
 Run `stack install` and ensure that `~/.local/bin` is added to your path.
 
+On osx, if getting openssl-related compile errors, try:
+
+`stack install --extra-include-dirs=/usr/local/opt/openssl/include --extra-lib-dirs=/usr/local/opt/openssl/lib/`
+
 ## Using the Tool
 
     confluence-sync-tool - syncs HTML/Markdown content to Confluence
